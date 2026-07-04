@@ -1,0 +1,45 @@
+/* src/components/GuessInput.module.css */
+.guessForm {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.inputField {
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  border: 2px solid var(--border-color, #cbd5e1);
+  border-radius: var(--radius-md, 8px);
+  width: 140px;
+  text-align: center;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.submitBtn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: var(--radius-md, 8px);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.submitBtn:disabled,
+.inputField:disabled {
+  background-color: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+  border-color: #cbd5e1;
+}
